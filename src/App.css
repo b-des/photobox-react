@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+.grid-layout{
+  border-radius: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  z-index: 1;
+  flex-wrap: wrap;
+  box-shadow: inset 0 3px 7px -6px #000;
+  overflow-y: auto;
+  position: relative;
+}
+
+.grid-layout > .grid-item{
+
+  display: block;
+  margin: 10px;
+  position: relative;
+}
+
+.grid-layout > .grid-item .tools{
+position: absolute;
+  z-index: 1;
+}
+
+.cropper{
+  background-color: #61dafb;
+  width: 280px;
+  height: 180px;
+}
